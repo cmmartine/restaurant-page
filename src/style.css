@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background: url('./assets/images/hoodh-ahmed-ocean-unsplash.jpg');
+  font-family: 'ElMessiriRegular', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  position: sticky;
+  z-index: 1;
+  margin: 10px 10px 10px 10px;
+  top: 0px;
+  height: 50px;
+  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(247, 231, 179);
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  width: 50px;
+}
+
+.button-div {
+  display: flex;
+}
+
+.button {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  background-color: rgb(247, 231, 179);
+}
+
+.button.header-title {
+  font-size: large;
+}
+
+.button:hover {
+  cursor: grab;
+  background-color: rgb(212, 247, 242);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: relative;
+  align-items: center;
+  width: 70%;
+}
+
+.content-inner-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10px;
+  padding: 0px 20px;
+  background-color: rgb(212, 247, 242);
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.content-inner-div.title {
+  align-items: center;
+}
+
+h1 { 
+  margin: 2px;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.footer-container{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0px;
+  height: 50px;
+  width: 70%;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 20px 20px 20px;
+  background-color: rgb(247, 231, 179);
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.footer-right {
+  padding: 5px 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 540px) {
+  .header-bar {
+    width: 90%;
+  }
+
+  .button.header-title {
+    font-size: medium;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .content-inner-div {
+    width: 90%;
+  }
+
+  .button {
+    margin-left: 5px;
+  }
+
+  .footer-div {
+    width: 90%;
+    padding: 0px 20px;
+  }
+
+  .footer-right {
+    display: none;
+  }
+}

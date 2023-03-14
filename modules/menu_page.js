@@ -15,6 +15,9 @@ const menuPage = (function() {
 
     menuTitle.innerText = 'Menu';
 
+    menuTitleDiv.classList.add('content-inner-div');
+    menuTitleDiv.classList.add('title');
+
     contentDiv.append(menuTitleDiv);
     menuTitleDiv.append(menuTitle);
   }
@@ -39,8 +42,10 @@ const menuPage = (function() {
     appetizerItemTwoTitle.innerText = 'Garlic Bread';
     appetizerItemTwo.innerText = 'Our homemade garlic bread topped with cheese';
 
+    appetizerDiv.classList.add('content-inner-div');
+
     contentDiv.append(appetizerDiv);
-    appetizerDiv.append(appetizerItemOneTitle, appetizerItemOne, appetizerItemTwoTitle, appetizerItemTwo);
+    appetizerDiv.append(appetizerTitle, appetizerItemOneTitle, appetizerItemOne, appetizerItemTwoTitle, appetizerItemTwo);
   }
 
   function createBoils() {
@@ -61,6 +66,8 @@ const menuPage = (function() {
     boilsItemTwo.innerText = 'Lobster, Black Mussels, Shrimp';
     boilsItemThree.innerText = 'Snow Crab Legs, Black Mussels, plus Lobster Tail or Shrimp';
 
+    boilsDiv.classList.add('content-inner-div');
+
     contentDiv.append(boilsDiv);
     boilsDiv.append(boilsTitle, boilsItemOneTitle, boilsItemOne, boilsItemTwoTitle, boilsItemTwo, boilsItemThreeTitle, boilsItemThree)
   }
@@ -78,6 +85,8 @@ const menuPage = (function() {
     drinksItemOne.innerText = 'Coconut rum, vodka, blue curacao, lemonade, grenadine, wooden shark';
     drinksItemTwoTitle.innerText = 'Mock Shark Attack';
     drinksItemTwo.innerText = 'Blue Lemonade, grenadine, wooden shark';
+
+    drinksDiv.classList.add('content-inner-div');
 
     contentDiv.append(drinksDiv);
     drinksDiv.append(drinksTitle, drinksItemOneTitle, drinksItemOne, drinksItemTwoTitle, drinksItemTwo);

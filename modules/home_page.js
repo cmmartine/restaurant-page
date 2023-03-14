@@ -17,6 +17,9 @@ const homePage = (function() {
 
     homeTitle.innerText = 'Shipwreck Bar and Grill';
 
+    homeTitlediv.classList.add('content-inner-div');
+    homeTitlediv.classList.add('title');
+
     contentDiv.append(homeTitlediv);
     homeTitlediv.append(homeTitle);
   }
@@ -29,6 +32,8 @@ const homePage = (function() {
     descriptionTitle.innerText = 'About Shipwreck';
     homeDescription.innerText = "Here at Shipwreck we take pride in every meal and drink we create, making sure each meal is packed with flavor and each drink mixed to your liking. Stop by today to try out our specialty seafood boils and ocean inspired cocktails. We look forward to seeing you!"
 
+    descriptionContainer.classList.add('content-inner-div');
+
     contentDiv.append(descriptionContainer);
     descriptionContainer.append(descriptionTitle, homeDescription);
   }
@@ -39,7 +44,9 @@ const homePage = (function() {
     const hoursDescription = document.createElement('p');
 
     hoursTitle.innerText = 'Hours';
-    hoursDescription.innerText = "Sunday - Thursday: 12pm - 9pm \n\n Friday - Saturday: 12pm - 11pm";
+    hoursDescription.innerText = "Sunday - Thursday: 12pm - 9pm \n Friday - Saturday: 12pm - 11pm";
+
+    hoursContainer.classList.add('content-inner-div');
 
     contentDiv.append(hoursContainer);
     hoursContainer.append(hoursTitle, hoursDescription);
@@ -51,7 +58,9 @@ const homePage = (function() {
     const locationDescription = document.createElement('p');
 
     locationTitle.innerText = 'Location';
-    locationDescription.innerText = '19 Bay Street, Hammerhead City, NJ'
+    locationDescription.innerText = '19 Bay Street, Hammerhead City, NJ';
+
+    locationContainer.classList.add('content-inner-div');
 
     contentDiv.append(locationContainer);
     locationContainer.append(locationTitle, locationDescription);
