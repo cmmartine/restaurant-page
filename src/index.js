@@ -55,6 +55,7 @@ import Crab from './assets/images/crab.png';
 
     footerContainer.classList.add('footer-container');
     footerRight.classList.add('footer-right');
+    footerLeft.classList.add('footer-left');
 
     contentDiv.append(footerContainer);
     footerContainer.append(footerLeft, footerRight);
