@@ -7,10 +7,8 @@ import Crab from './assets/images/crab.png';
 
   const contentDiv = document.getElementById('content');
 
-  homePage.assembleContent();
-
   (function createHeaderBar() {
-    const headerBar = document.createElement('div');
+    const headerBar = document.getElementById('header');
     const headerTitle = document.createElement('h1');
     const headerImg = new Image();
     const headerLeft = document.createElement('div');
@@ -28,7 +26,6 @@ import Crab from './assets/images/crab.png';
     homeBtn.innerText = 'Home';
     menuBtn.innerText = 'Menu';
 
-    headerBar.classList.add('header-bar');
     headerLeft.classList.add('header-left');
     headerTitle.classList.add('header-title');
     headerTitle.classList.add('button');
@@ -44,8 +41,8 @@ import Crab from './assets/images/crab.png';
     headerBar.append(headerLeft, headerBtnDiv);
   })();
 
-  (function createFooter() {
-    const footerContainer = document.createElement('div');
+  const createFooter = function() {
+    const footerContainer = document.createElement('footer');
     const footerLeft = document.createElement('div');
     const footerRight = document.createElement('div');
     const contactTitle = document.createElement('h3');
@@ -53,17 +50,17 @@ import Crab from './assets/images/crab.png';
     const imageCredit = document.createElement('p');
 
     contactTitle.innerText = 'Contact Us';
-    contactInfo.innerText = 'shipwreck_bar_grill@email.com';
-    imageCredit.innerText = "Images by: \n freepik.com, \n Hoodh Ahmed, \n";
+    contactInfo.innerText = "Email: shipwreck_bar_grill@email.com \n Phone: (555) 555-5555";
+    imageCredit.innerText = "Images by: \n freepik.com";
 
     footerContainer.classList.add('footer-container');
     footerRight.classList.add('footer-right');
 
+    contentDiv.append(footerContainer);
     footerContainer.append(footerLeft, footerRight);
-    insertAfter(contentDiv, footerContainer);
     footerLeft.append(contactTitle, contactInfo);
     footerRight.append(imageCredit);
-  })();
+  }
 
   function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
@@ -76,11 +73,16 @@ import Crab from './assets/images/crab.png';
   function changeToHome() {
     clearContent();
     homePage.assembleContent();
+    createFooter();
   }
 
   function changeToMenu() {
     clearContent();
     menuPage.assembleContent();
+    createFooter();
   }
+
+  homePage.assembleContent();
+  createFooter();
 
 }());
