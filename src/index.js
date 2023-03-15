@@ -42,7 +42,7 @@ import Crab from './assets/images/crab.png';
   })();
 
   const createFooter = function() {
-    const footerContainer = document.createElement('footer');
+    const footerContainer = document.createElement('div');
     const footerLeft = document.createElement('div');
     const footerRight = document.createElement('div');
     const contactTitle = document.createElement('h3');
@@ -61,10 +61,6 @@ import Crab from './assets/images/crab.png';
     footerContainer.append(footerLeft, footerRight);
     footerLeft.append(contactTitle, contactInfo);
     footerRight.append(imageCredit);
-  }
-
-  function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
   }
 
   function clearContent() {
