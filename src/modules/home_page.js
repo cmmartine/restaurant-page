@@ -1,5 +1,5 @@
 export { homePage };
-import Ocean from '../src/assets/images/hoodh-ahmed-ocean-unsplash.jpg';
+import Ocean from '../assets/images/hoodh-ahmed-ocean-unsplash.jpg';
 
 const homePage = (function() {
 

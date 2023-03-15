@@ -1,5 +1,5 @@
-import { homePage } from "../modules/home_page";
-import { menuPage } from "../modules/menu_page";
+import { homePage } from "./modules/home_page";
+import { menuPage } from "./modules/menu_page";
 import './style.css';
 import Crab from './assets/images/crab.png';
 
