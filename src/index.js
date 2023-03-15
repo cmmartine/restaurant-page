@@ -51,7 +51,7 @@ import Crab from './assets/images/crab.png';
 
     contactTitle.innerText = 'Contact Us';
     contactInfo.innerText = "Email: shipwreck_bar_grill@email.com \n Phone: (555) 555-5555";
-    imageCredit.innerText = "Images by: \n freepik.com";
+    imageCredit.innerText = "Images by: \n freepik.com, \n Hoodh Ahmed";
 
     footerContainer.classList.add('footer-container');
     footerRight.classList.add('footer-right');

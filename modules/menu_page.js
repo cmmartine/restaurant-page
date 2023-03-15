@@ -1,12 +1,24 @@
 export { menuPage };
+import SharkAttack from '../src/assets/images/shark-attack.jpg';
 
 const menuPage = (function() {
 
   const contentDiv = document.getElementById('content');
 
   function assembleContent() {
+    insertImage();
     createTitle();
     createMenuItems();
+  }
+
+  function insertImage() {
+    const img = new Image();
+    const imgContainer = document.createElement('div');
+    img.src = SharkAttack;
+    img.alt = 'Shark attach drink';
+    imgContainer.classList.add('img-container');
+    contentDiv.append(imgContainer);
+    imgContainer.append(img);
   }
 
   function createTitle() {

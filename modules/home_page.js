@@ -1,14 +1,27 @@
 export { homePage };
+import Ocean from '../src/assets/images/hoodh-ahmed-ocean-unsplash.jpg';
 
 const homePage = (function() {
 
   const contentDiv = document.getElementById('content');
 
   function assembleContent() {
+    insertImage();
     createTitle();
     createDescription();
     createHours();
     createLocation();
+  }
+
+  function insertImage() {
+    const img = new Image();
+    const imgContainer = document.createElement('div');
+    img.src = Ocean;
+    img.alt = 'Ocean clear deep blue water';
+    img.classList.add('top-image');
+    imgContainer.classList.add('img-container');
+    contentDiv.append(imgContainer);
+    imgContainer.append(img);
   }
 
   function createTitle() {

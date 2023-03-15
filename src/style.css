@@ -57,6 +57,17 @@ body {
   background-color: rgb(114, 114, 114);
 }
 
+.top-image {
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -125,6 +136,7 @@ p {
 .footer-right {
   padding: 5px 15px;
   font-size: 12px;
+  color: rgba(112, 111, 111, 0.795);
 }
 
 @media (max-width: 480px) {
@@ -139,6 +151,10 @@ p {
 
   .button {
     padding-left: 2px;
+  }
+
+  .img-container {
+    width: 100%;
   }
 
   .footer-right {

@@ -6,6 +6,8 @@ module.exports = {
   devtool: 'inline-source-map',
   output: {
     filename: 'main.js',
+    filename: 'home_page.js',
+    filename: 'menu_page.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
